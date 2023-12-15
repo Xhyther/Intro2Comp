@@ -30,6 +30,13 @@ a{text-decoration: none;
         background-color: rgb(167, 215, 215);
         }
 
+        .header-content{
+            background-color: rgb(255, 255, 255);
+            background: scroll;
+            height: 1000vh;
+            width: max-content;
+        }
+
         .header-content h1 {
             color: #3f3f3f;
             margin-top: 175px;
