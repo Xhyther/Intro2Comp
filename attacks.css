@@ -9,6 +9,9 @@
     's l p'
     'se pa ev';
 
+    grid-template-rows: repeat (3, 1fr);
+    grid-template-columns: 240px auto 240px;
+
  }
 
  .grid:nth-child(1) {
