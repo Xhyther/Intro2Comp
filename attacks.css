@@ -1,7 +1,5 @@
 
 .grid {
-    height: 85vh;
-
     display: grid;
     gap: 1rem;
 
@@ -11,11 +9,11 @@
     's l p'
     'se pa ev';
 
-    grid-template-rows: repeat (4, 25%);
-    grid-template-columns: 240px auto 240px;
  }
 
  .grid:nth-child(1) {
+
+
 
  }
 
@@ -24,6 +22,7 @@
  }
  
  .grid:nth-child(3)
+
  .grid:nth-child(4)
  .grid:nth-child(5)
  .grid:nth-child(6)
@@ -32,4 +31,4 @@
  .grid:nth-child(9)
  .grid:nth-child(10)
  .grid:nth-child(11)
- .grid:nth-child(12)
+ .grid:nth-child(12) 
