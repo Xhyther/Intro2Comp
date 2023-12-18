@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Faustina&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
-
 .grid {
     display: grid;
     gap: 1rem;
@@ -13,20 +12,40 @@
     'se pa ev';
 
     grid-template-rows: repeat (3, 1fr);
-    grid-template-columns: repeat(3, auto);
-
+    grid-template-columns: repeat(3, minmax(240px, 1fr));
     font-family: 'Maven Pro';
 
+    border-radius: 25%;
+ }
+
+ .h1 {
+   font-size: calc(22px + 2vw);
+ }
+
+ .p {
+   font-size: calc(12px + 2vw);
  }
    /*-----Header row-----*/
   .card:nth-child(1) {
     background-color: #20B2AA;
+    border-radius: 2vw;
+    margin-top: 1em;
+    height: 2.5vh;
+    width: 1fr;
   }
   .card:nth-child(2) {
     background-color: #01796F;
+    border-radius: 2vw;
+    height: 8vh;
+    width: 1fr;
+    margin: 0 auto;
   }
   .card:nth-child(3) {
     background-color: #20B2AA;
+    border-radius: 2vw;
+    margin-top: 1em;
+    height: 2.5vh;
+    width: 1fr;
   }
  
   /*-----first row-----*/
