@@ -1,63 +1,84 @@
-@import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Faustina&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
-.grid {
+@import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk&display=swap');
+
+.container {
     display: grid;
-    gap: 1rem;
+    gap: 1.55rem;
 
-    grid-template-areas: 
-    'd A d'
-    'm d b'
-    's l p'
-    'se pa ev';
-
-    grid-template-rows: repeat (3, 1fr);
+    grid-auto-rows: minmax(100px, 1fr);
     grid-template-columns: repeat(3, minmax(240px, 1fr));
     font-family: 'Maven Pro';
-
-    border-radius: 25%;
+    margin: 20px;
  }
 
- .h1 {
-   font-size: calc(22px + 2vw);
+ .card {
+    border-radius: 1em;
+    padding: 2em;
+
+    transition: all 500ms;
+    overflow: hidden;
+ }
+ 
+ .card:hover {
+  box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
+  transform: translateY(-3px) scale(1.1);
+}
+
+ .card h1 {
+  font-family: Maven Pro;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
  }
 
- .p {
-   font-size: calc(12px + 2vw);
+ .card p {
+  font-family: Maven Pro;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
  }
    /*-----Header row-----*/
-  .card:nth-child(1) {
+  .block:nth-child(1) {
     background-color: #20B2AA;
     border-radius: 2vw;
-    margin-top: 1em;
+    margin-top: 2em;
     height: 2.5vh;
     width: 1fr;
+
+    box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
   }
-  .card:nth-child(2) {
+  .block:nth-child(2) {
     background-color: #01796F;
-    border-radius: 2vw;
-    height: 8vh;
-    width: 1fr;
+    color: white;
+    font-family: 'Familjen Grotesk';
+    font-weight: 700;
+    font-size: 32px;
+    text-align: center;
+    border-radius: 20px;
+
+    display: flex;
+    width: 434px;
+    height: 75px;
     margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+   
+    box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
   }
-  .card:nth-child(3) {
+  .block:nth-child(3) {
     background-color: #20B2AA;
     border-radius: 2vw;
-    margin-top: 1em;
+    margin-top: 2em;
     height: 2.5vh;
     width: 1fr;
+
+    box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
   }
  
-  /*-----first row-----*/
-  .card:nth-child(4) {
-    background-color: #A7D7D7;
-    color: #256;
-  }
-  .card:nth-child(5) {
-    background-color: #A7D7D7;
-    color: #256;
-  }
-  .card:nth-child(6) {
+  .row1 {
     background-color: #A7D7D7;
     color: #256;
   }
@@ -67,9 +88,15 @@
     background-color: #0E9090;
     color: #E0FFFF;
   }
-  .card:nth-child(8) {
+  .block:nth-child(8) {
     background-color: #01796F;
     color: #E0FFFF;
+    border-radius: 1em;
+    display: flex;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
   }
   .card:nth-child(9) {
     background-color: #0E9090;
